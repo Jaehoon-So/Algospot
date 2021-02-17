@@ -30,10 +30,10 @@ int asymmetry(int width){
 int main(){
     cout.sync_with_stdio(0);
     cin.tie(0);
-    memset(cache, -1, sizeof(cache) );
     int caseNum;
     cin >> caseNum;
     while(caseNum--){
+        memset(cache, -1, sizeof(cache) );
         int width;
         cin >> width;
         cout << asymmetry(width) << '\n';
